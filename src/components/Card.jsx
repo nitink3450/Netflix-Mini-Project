@@ -1,10 +1,11 @@
 import React from "react";
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 
 export default function Card(props) {
   return (
     <div>
-      <Link to={ `/Player/${props.name}`} className="card">
+      {/* <Link to={ `/Player/${props.name}`} className="card"> */}
+      <div className="card">
         <img src={props.img} className="card__image" alt="" />
         <div className="card__overlay">
           <div className="card__header">
@@ -23,7 +24,8 @@ export default function Card(props) {
           </div>
           <p className="card__description">{props.description}</p>
         </div>
-      </Link>
+        </div>
+      {/* </Link> */}
     </div>
   );
 }

@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import Card from "../components/Card";
 import { movie_Data } from "../Data";
-
 export default function Home() {
   const [name, setName] = useState("");
   return (
