@@ -17,14 +17,14 @@ function LogIn() {
   const handleClose1 = () => {
     setShow(false);
     setIsLogggedIn(!isLogggedIn)
-    if (Name == '' || Name == null) {
+    if (Name === '') {
       alert('Add Proper Full Name..');
       setIsLogggedIn(false);
     }
   };
 
   const handleShow = () => {
-    if (isLogggedIn == true) {
+    if (isLogggedIn === true) {
       setIsLogggedIn(false)
     }
     else {
