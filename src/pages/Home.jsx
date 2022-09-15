@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import Card from "../components/Card";
 import { movie_Data } from "../Data";
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
                 profile={ele.profile}
                 watch={ele.watch}
               />
-            );
+            )
           }
         })}
       </div>
