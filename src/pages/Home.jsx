@@ -13,7 +13,6 @@ export default function Home() {
         type="text"
         placeholder="                       Search for animes                        🔍"
       />
-
       {/* <Link path='/Player'> Player</Link> */}
       <div className="container mt-5 cards_containner">
         {movie_Data.map((ele, i) => {
