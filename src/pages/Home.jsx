@@ -16,7 +16,7 @@ export default function Home() {
       {/* <Link path='/Player'> Player</Link> */}
       <div className="container mt-5 cards_containner">
         {movie_Data.map((ele, i) => {
-          if (ele.name.toLowerCase().includes(name.toLowerCase())) {
+          if(((ele.name).toLowerCase()).includes((name).toLowerCase())) {
             return (
               <Card
                 key={i}

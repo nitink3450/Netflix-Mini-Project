@@ -6,10 +6,15 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import LogIn from './LogIn';
+// export const SearchData = createContext();
 function NavScrollExample() {
+  // const [name, setName] = useState('');
+  // console.log(SearchData);
+  
   //function name 1st letter should be in capital letter
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    // <SearchData.Provider value={name}>
+      <Navbar bg="dark" variant="dark" expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">
           <img
@@ -41,13 +46,14 @@ function NavScrollExample() {
               placeholder="🔍 Search for Animes"
               className="me-2"
               aria-label="Search"
-              // onChange={(e)=>{setName(e.target.value)}}
+              onChange={(e)=>{setName(e.target.value)}}
             /> */}
             {/* <Button variant="outline-success">Search</Button> */}
           </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    // </SearchData.Provider>
   );
 }
 

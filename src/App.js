@@ -6,7 +6,6 @@ import Home from "./pages/Home";
 // import Player from "./pages/Player";
 import NotFound from "./pages/NotFound";
 import React from "react";
-
 export default function App() {
   return (
     <>

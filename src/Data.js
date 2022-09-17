@@ -26,7 +26,7 @@ export const movie_Data = [
     description:
       "Dragon Ball tells the tale of a young warrior by the name of Son Goku, a young peculiar boy with a tail who embarks on a quest to become stronger and learns of the Dragon Balls.",
     profile:
-      "https://cdn.freebiesupply.com/logos/large/2x/dragon-ball-z-2-logo-png-transparent.png",
+      "https://sportshub.cbsistatic.com/i/2021/08/09/6e3315ce-cb47-42da-9b0a-41ef335f000e/dragon-ball-super-new-super-hero-movie-goku-toei-animation-1276890.jpg",
     watch: "https://animeseries.so/anime/dragon-ball-super-dub.html",
   },
   {
