@@ -1,20 +1,21 @@
 // import Button from "react-bootstrap/Button";
-import React from "react";
+import './Navbar.css'
+import React,{useContext} from "react";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import LogIn from './LogIn';
-// export const SearchData = createContext();
+import { SearchData } from './UseContext';
 function NavScrollExample() {
-  // const [name, setName] = useState('');
-  // console.log(SearchData);
+const {value, setValue} = useContext(SearchData);
+  console.log(value);
   
   //function name 1st letter should be in capital letter
   return (
     // <SearchData.Provider value={name}>
-      <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar className="sticky" bg="dark" variant="dark" expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">
           <img
@@ -39,15 +40,15 @@ function NavScrollExample() {
               <NavDropdown.Item href="#action4">English Dub</NavDropdown.Item>
             </NavDropdown>
           </Nav>
+          <LogIn/><br />
           <Form className="d-flex">
-            <LogIn/>
-            {/* <Form.Control
+            <Form.Control
               type="search"
               placeholder="🔍 Search for Animes"
               className="me-2"
               aria-label="Search"
-              onChange={(e)=>{setName(e.target.value)}}
-            /> */}
+              onChange={(e)=>{setValue(e.target.value)}}
+            />
             {/* <Button variant="outline-success">Search</Button> */}
           </Form>
         </Navbar.Collapse>

@@ -35,14 +35,13 @@ function LogIn() {
   return (
     <>
       <h4>
-        <Badge className="mt-2 pt-2 " bg="dark" text="light">
-          {isLogggedIn ? `Hello ${Name}` : 'Please Login into Your Account'}
+      <Badge className="mt-2 pt-2 " bg="dark" text="light">
+          {isLogggedIn ? `Hello ${Name}` : 'Please Login'}
         </Badge>
       </h4>
       <Button variant="outline-info mx-2" onClick={handleShow}>
         {isLogggedIn ? 'LogOut' : 'LogIn'}
-      </Button>
-
+      </Button><br />
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Login</Modal.Title>

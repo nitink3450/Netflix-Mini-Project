@@ -5,11 +5,13 @@ import Home from "./pages/Home";
 // import Logs from "./pages/Logs";
 // import Player from "./pages/Player";
 import NotFound from "./pages/NotFound";
-import React from "react";
+import React,{useState} from "react";
+import { SearchData } from "./components/UseContext";
 export default function App() {
+  const [value, setValue] = useState('')
   return (
     <>
-
+      <SearchData.Provider value={{value, setValue}}>
         <BrowserRouter>
           <NavScrollExample />
           <Routes>
@@ -19,6 +21,7 @@ export default function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
+      </SearchData.Provider>
 
 
     </>
